@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;}
+html{  font-size: 62.5%;}
+body{font-size: 1.6rem;
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: black;
+
+}
+
+
+.gradiente{
+padding: 20px;
+background: linear-gradient(70deg,black, red,orange,yellow,green,rgb(98, 98, 245),blue,rgb(248, 155, 248),rgb(156, 5, 156),white ) repeat;
+background-size: 900% 120%;
+animation: gradiente 6s linear infinite alternate;
+border-radius: 10rem;
+}
+@keyframes gradiente {
+    0% {
+        background-position: 0% 0%;
+    }
+    100%{
+        background-position: 100% 0%;
+    }
+}
+
+main{
+    font-size: 3.2rem;
+    width: 40%; 
+    min-width: 600px;
+    border: 40px solid transparent;
+    background-color: rgb(68, 67, 67);
+    border-radius: 10rem;
+ 
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center; 
+}
+
+h1{
+    color: white;   
+}
+
+.section-input{
+    margin: 3rem ;
+    width: 95%;
+    color: white;
+}
+
+.input{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem 0;
+}
+
+.input label{
+    width: 40%;
+}
+
+.input input{
+    width: 60%;
+    padding: 0.6rem;
+    font-size: 2rem;
+    border-radius: 1.5rem;
+    border: none;
+    text-align: center;
+    
+}
+.input input:focus{
+    outline: 0;
+    box-shadow: 0;
+}
+
+input:focus::placeholder {
+    color: transparent;
+  }
+
+.enviar{
+    font-size: 3rem;
+    width: 60%;
+    border: none;
+    border-radius: 3rem;
+    padding: 1rem;
+}
+
+.resultado{
+    margin-top: 3rem;
+    width: 80%;
+    height: 20rem;
+    padding: 1rem;
+    background-color: rgb(238, 235, 240);
+    border-radius: 4rem;
+
+}
+
+.novo{
+    font-size: 3rem;
+    width: 60%;
+    border: none;
+    border-radius: 3rem;
+    padding: 1rem;
+    margin-top: 4rem;
+}
