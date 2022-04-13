@@ -34,7 +34,7 @@ function calculo(){
   
    const novo = document.querySelector(".novo")
 
-   console.log(novo)
+ 
     novo.addEventListener("click", refresh)
 
     function refresh(){
